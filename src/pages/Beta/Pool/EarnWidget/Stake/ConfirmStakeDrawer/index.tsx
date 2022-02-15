@@ -34,7 +34,7 @@ const ConfirmStakeDrawer: React.FC<Props> = props => {
         {t('earn.depositingLiquidity')}
       </Text>
       <Text fontWeight={600} fontSize={14} color="text1" textAlign="center">
-        {parsedAmount?.toSignificant(4)} PGL
+        {parsedAmount?.toSignificant(4)} SGL
       </Text>
     </PendingWrapper>
   )
@@ -49,7 +49,7 @@ const ConfirmStakeDrawer: React.FC<Props> = props => {
           {t('earn.transactionSubmitted')}
         </Text>
         <Text fontWeight={600} fontSize={14} color="text1" textAlign="center">
-          {t('earn.deposited')} {parsedAmount?.toSignificant(4)} PGL
+          {t('earn.deposited')} {parsedAmount?.toSignificant(4)} SGL
         </Text>
       </Box>
       <Button

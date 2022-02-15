@@ -17,7 +17,7 @@ export interface News {
   type: TypeNews
 }
 
-// Get News in Pangolin Strapi api
+// Get News in Supreme Strapi api
 export function useGetNews() {
   const [news, setNews] = useState<News[]>()
 

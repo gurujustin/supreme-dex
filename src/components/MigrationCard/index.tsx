@@ -55,7 +55,7 @@ const MigrationCard = ({ pair, onClickMigrate, stakingData }: StatProps) => {
         <Box>
           <Stat
             title={t('migratePage.readyToMigrate')}
-            stat={`${totalLiqAmount ? totalLiqAmount.toSignificant(6) : '-'} PGL`}
+            stat={`${totalLiqAmount ? totalLiqAmount.toSignificant(6) : '-'} SGL`}
             titlePosition="bottom"
           />
         </Box>

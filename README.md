@@ -1,16 +1,16 @@
-# Pangolin Interface
+# Supreme Interface
 
-An open source interface for Pangolin -- a community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution -- powered by Avalanche.
+An open source interface for Supreme -- a community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution -- powered by Avalanche.
 
 - Website: [pangolin.exchange](https://pangolin.exchange/)
 - Interface: [app.pangolin.exchange](https://app.pangolin.exchange)
-- Telegram: [Pangolin](https://t.me/pangolindex)
-- Discord: [Pangolin](https://discord.com/invite/PARrDYYbfw)
+- Telegram: [Supreme](https://t.me/pangolindex)
+- Discord: [Supreme](https://discord.com/invite/PARrDYYbfw)
 - Twitter: [@pangolindex](https://twitter.com/pangolindex)
 
 
 
-## Accessing the Pangolin Interface
+## Accessing the Supreme Interface
 
 Visit [app.pangolin.exchange](https://app.pangolin.exchange).
 
@@ -37,7 +37,7 @@ To have the interface default to a different network when a wallet is not connec
 3. Change `REACT_APP_NETWORK_URL` to your JSON-RPC provider 
 
 Note that the interface only works on testnets where both 
-[Pangolin](https://github.com/pangolindex/exchange-contracts) and 
+[Supreme](https://github.com/pangolindex/exchange-contracts) and 
 [multicall](https://github.com/makerdao/multicall) are deployed.
 The interface will not work on other networks.
 

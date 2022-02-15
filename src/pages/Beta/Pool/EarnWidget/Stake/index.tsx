@@ -186,7 +186,7 @@ const Stake = ({ pair, version, onComplete }: StakeProps) => {
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin Liquidity',
+      name: 'Supreme Liquidity',
       version: '1',
       chainId: chainId,
       verifyingContract: pairContract.address
@@ -300,7 +300,7 @@ const Stake = ({ pair, version, onComplete }: StakeProps) => {
           addonAfter={
             <Box display="flex" alignItems="center">
               <Text color="text4" fontSize={24}>
-                PGL
+                SGL
               </Text>
             </Box>
           }

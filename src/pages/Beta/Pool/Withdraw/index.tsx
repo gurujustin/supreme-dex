@@ -139,7 +139,7 @@ const Withdraw = ({ stakingInfo, version, onClose }: WithdrawProps) => {
           <Text fontWeight={600} fontSize={14} color="text1" textAlign="center">
             {t('earn.withdrawingLiquidity', {
               amount: stakingInfo?.stakedAmount?.toSignificant(4),
-              symbol: 'PGL'
+              symbol: 'SGL'
             })}
           </Text>
 

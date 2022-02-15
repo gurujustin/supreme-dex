@@ -131,7 +131,7 @@ const DepositWidget: React.FC<Props> = ({ stakingInfo, onClose }) => {
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin',
+      name: 'Supreme',
       chainId: chainId,
       verifyingContract: stakingTokenContract.address
     }

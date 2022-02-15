@@ -92,7 +92,7 @@ const ConfirmRemoveDrawer: React.FC<Props> = props => {
       <ConfirmBottom>
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Text fontSize="15px" color="text4">
-            {'PGL ' + currencyA?.symbol + '/' + currencyB?.symbol} Burned
+            {'SGL ' + currencyA?.symbol + '/' + currencyB?.symbol} Burned
           </Text>
           <CurrencyWithLogo>
             <DoubleCurrencyLogo currency0={currencyA} currency1={currencyB} size={20} />

@@ -29,7 +29,7 @@ export function usePairHourlyRateData(pairAddress: string, timeWindow: string, i
   useEffect(() => {
     const currentTime = dayjs.utc()
 
-    // February 8th 2021 - Pangolin Factory is created
+    // February 8th 2021 - Supreme Factory is created
     const startTime =
       type === 'ALL'
         ? dayjs('2021-02-11')
@@ -167,7 +167,7 @@ export function useHourlyPairTokensChartData(
   useEffect(() => {
     const currentTime = dayjs.utc()
 
-    // February 8th 2021 - Pangolin Factory is created
+    // February 8th 2021 - Supreme Factory is created
     const startTime =
       type === 'ALL'
         ? dayjs('2021-02-11')

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Text, Box } from '@pangolindex/components'
-import { useDarkModeManager } from '../../state/user/hooks'
+import { isMobile } from 'react-device-detect'
+// import { useDarkModeManager } from '../../state/user/hooks'
 import Logo from 'src/assets/images/supreme.png'
-import LogoDark from 'src/assets/images/supreme.png'
+import MobileLogo from 'src/assets/images/supreme.png'
 import { Title, LogoWrapper } from './styled'
 
 interface LogoProps {
@@ -10,19 +11,19 @@ interface LogoProps {
 }
 
 export default function LogoIcon({ collapsed }: LogoProps) {
-  const [isDark] = useDarkModeManager()
-
+  // const [isDark] = useDarkModeManager()
+  console.log("debug mobile", isMobile);
   return (
     <LogoWrapper collapsed={collapsed}>
       <Box>
         <Title href=".">
-          <img width={'28px'} src={isDark ? LogoDark : Logo} alt="logo" />
+          <img width={'28px'} src={isMobile ? MobileLogo : Logo} alt="logo" />
         </Title>
       </Box>
       {!collapsed && (
         <Box ml={12}>
           <Text color="text1" fontSize={16}>
-            Pangolin
+            Supreme
           </Text>
         </Box>
       )}

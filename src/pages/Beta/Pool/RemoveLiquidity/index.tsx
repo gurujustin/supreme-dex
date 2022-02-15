@@ -104,7 +104,7 @@ const RemoveLiquidity = ({ currencyA, currencyB, onClose }: RemoveLiquidityProps
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin Liquidity',
+      name: 'Supreme Liquidity',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address
@@ -349,7 +349,7 @@ const RemoveLiquidity = ({ currencyA, currencyB, onClose }: RemoveLiquidityProps
           addonAfter={
             <Box display="flex" alignItems="center">
               <Text color="text4" fontSize={24}>
-                PGL
+                SGL
               </Text>
             </Box>
           }

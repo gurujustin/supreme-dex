@@ -164,7 +164,7 @@ const PoolInfo = ({
                   <StyledBalanceMax onClick={onMax}>{t('currencyInputPanel.max')}</StyledBalanceMax>
 
                   <Text color="text4" fontSize={24}>
-                    PGL
+                    SGL
                   </Text>
                 </Box>
               }

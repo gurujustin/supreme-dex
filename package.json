@@ -1,7 +1,7 @@
 {
   "name": "@pangolindex/interface",
   "version": "1.0.0",
-  "description": "Pangolin Interface",
+  "description": "Supreme Interface",
   "homepage": ".",
   "engines": {
     "node": ">=14.17.0"

@@ -149,7 +149,7 @@ export default function StakingModalSingleSide({ isOpen, onDismiss, stakingInfo,
 		//   { name: 'verifyingContract', type: 'address' }
 	  // ]
 	  // const domain = {
-		//   name: 'Pangolin',
+		//   name: 'Supreme',
 		//   chainId: chainId,
 		//   verifyingContract: stakingTokenContract.address
 	  // }

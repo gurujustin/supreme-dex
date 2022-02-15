@@ -134,7 +134,7 @@ export default function UnstakingModal({
             <TYPE.body fontSize={20}>
               {t('earn.withdrawingLiquidity', {
                 amount: stakingInfo?.stakedAmount?.toSignificant(4),
-                symbol: 'PGL'
+                symbol: 'SGL'
               })}
             </TYPE.body>
             <TYPE.body fontSize={20}>

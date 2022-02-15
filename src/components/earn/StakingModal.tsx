@@ -186,7 +186,7 @@ export default function StakingModal({
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin Liquidity',
+      name: 'Supreme Liquidity',
       version: '1',
       chainId: chainId,
       verifyingContract: pairContract.address
@@ -320,7 +320,7 @@ export default function StakingModal({
         <LoadingView onDismiss={wrappedOnDismiss}>
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader>{t('earn.depositingLiquidity')}</TYPE.largeHeader>
-            <TYPE.body fontSize={20}>{parsedAmount?.toSignificant(4)} PGL</TYPE.body>
+            <TYPE.body fontSize={20}>{parsedAmount?.toSignificant(4)} SGL</TYPE.body>
           </AutoColumn>
         </LoadingView>
       )}
@@ -329,7 +329,7 @@ export default function StakingModal({
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader>{t('earn.transactionSubmitted')}</TYPE.largeHeader>
             <TYPE.body fontSize={20}>
-              {t('earn.deposited')} {parsedAmount?.toSignificant(4)} PGL
+              {t('earn.deposited')} {parsedAmount?.toSignificant(4)} SGL
             </TYPE.body>
           </AutoColumn>
         </SubmittedView>

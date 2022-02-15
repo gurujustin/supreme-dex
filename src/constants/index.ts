@@ -29,13 +29,13 @@ type ChainTokenList = {
 }
 
 export const PNG: { [chainId in ChainId]: Token } = {
-  [ChainId.FUJI]: new Token(ChainId.FUJI, '0x83080D4b5fC60e22dFFA8d14AD3BB41Dde48F199', 18, 'PNG', 'Pangolin'),
-  [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, '0x60781C2586D68229fde47564546784ab3fACA982', 18, 'PNG', 'Pangolin')
+  [ChainId.FUJI]: new Token(ChainId.FUJI, '0x83080D4b5fC60e22dFFA8d14AD3BB41Dde48F199', 18, 'PNG', 'Supreme'),
+  [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, '0x60781C2586D68229fde47564546784ab3fACA982', 18, 'PNG', 'Supreme')
 }
 
 export const SUPREME: { [chainId in ChainId]: Token } = {
-  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'SUPREME', 'Pangolin'),
-  [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, '0x75e80319B1D9285eEEB7ebE82121cf8f8fDe5a28', 18, 'SUPREME', 'Pangolin')
+  [ChainId.FUJI]: new Token(ChainId.FUJI, ZERO_ADDRESS, 18, 'SUPREME', 'Supreme'),
+  [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, '0x75e80319B1D9285eEEB7ebE82121cf8f8fDe5a28', 18, 'SUPREME', 'Supreme')
 }
 
 export const ETH: { [chainId in ChainId]: Token } = {

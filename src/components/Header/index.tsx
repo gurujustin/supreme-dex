@@ -6,12 +6,13 @@ import { NavLink } from 'react-router-dom'
 // import { useLocation } from 'react-router'
 import { darken } from 'polished'
 import { useTranslation } from 'react-i18next'
+import { isMobile } from 'react-device-detect'
 // import { ChevronDown } from 'react-feather'
 import styled from 'styled-components'
-import Logo from '../../assets/images/supreme-logo.png'
-import LogoDark from '../../assets/images/supreme-logo.png'
+import Logo from '../../assets/images/supreme.png'
+import LogoDark from '../../assets/images/supreme.png'
 import { useActiveWeb3React } from '../../hooks'
-import { useDarkModeManager } from '../../state/user/hooks'
+// import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances, useAggregatePngBalance } from '../../state/wallet/hooks'
 import { CardNoise } from '../earn/styled'
 import { CountUp } from 'use-count-up'
@@ -295,7 +296,7 @@ export default function Header() {
   // const location: any = useLocation()
 
   const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
-  const [isDark] = useDarkModeManager()
+  // const [isDark] = useDarkModeManager()
 
   const aggregateBalance: TokenAmount | undefined = useAggregatePngBalance()
 
@@ -316,7 +317,7 @@ export default function Header() {
       <HeaderRow>
         <Title href=".">
           <PngIcon>
-            <img height={'32px'} src={isDark ? LogoDark : Logo} alt="logo" />
+            <img height={'32px'} src={isMobile ? LogoDark : Logo} alt="logo" />
           </PngIcon>
         </Title>
         <HeaderLinks>

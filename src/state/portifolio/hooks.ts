@@ -159,7 +159,7 @@ export function useGetWalletChainTokens(): [(TokenDataUser | PairDataUser)[], bo
       setTokens(requestTokens)
     }
 
-    // This functions is temporary for Pangolin birthday 
+    // This functions is temporary for Supreme birthday 
     const getPangolinPairs = async () => {
       const response = await fetch(
         `https://openapi.debank.com/v1/user/protocol?id=${account}&protocol_id=avax_pangolin`

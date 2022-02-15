@@ -140,7 +140,7 @@ export default function BridgeMigratorModal({ isOpen, onDismiss, pairFrom, pairT
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin Liquidity',
+      name: 'Supreme Liquidity',
       version: '1',
       chainId: chainId,
       verifyingContract: pairContract.address
@@ -236,7 +236,7 @@ export default function BridgeMigratorModal({ isOpen, onDismiss, pairFrom, pairT
           <AutoColumn gap="12px" justify={'center'}>
             {/* TODO: Translate with i18n */}
             <TYPE.largeHeader>Migrating Liquidity</TYPE.largeHeader>
-            <TYPE.body fontSize={20}>{parsedAmount?.toSignificant(4)} PGL</TYPE.body>
+            <TYPE.body fontSize={20}>{parsedAmount?.toSignificant(4)} SGL</TYPE.body>
           </AutoColumn>
         </LoadingView>
       )}
@@ -245,7 +245,7 @@ export default function BridgeMigratorModal({ isOpen, onDismiss, pairFrom, pairT
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader>{t('earn.transactionSubmitted')}</TYPE.largeHeader>
             {/* TODO: Translate with i18n */}
-            <TYPE.body fontSize={20}>Migrated {parsedAmount?.toSignificant(4)} PGL</TYPE.body>
+            <TYPE.body fontSize={20}>Migrated {parsedAmount?.toSignificant(4)} SGL</TYPE.body>
           </AutoColumn>
         </SubmittedView>
       )}

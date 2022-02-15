@@ -271,7 +271,7 @@ const Manage: React.FC<ManageProps> = ({ version, stakingInfo, currencyA, curren
                     {stakingInfo?.stakedAmount?.toSignificant(6) ?? '-'}
                   </TYPE.white>
                   <TYPE.white>
-                    PGL {currencyA?.symbol}-{currencyB?.symbol}
+                    SGL {currencyA?.symbol}-{currencyB?.symbol}
                   </TYPE.white>
                 </RowBetween>
               </AutoColumn>
@@ -330,7 +330,7 @@ const Manage: React.FC<ManageProps> = ({ version, stakingInfo, currencyA, curren
             <ButtonPrimary padding="8px" borderRadius="8px" width="160px" onClick={handleDepositClick}>
               {stakingInfo?.stakedAmount?.greaterThan(BIG_INT_ZERO)
                 ? t('earnPage.deposit')
-                : t('earnPage.depositStakingTokens', { symbol: 'PGL' })}
+                : t('earnPage.depositStakingTokens', { symbol: 'SGL' })}
             </ButtonPrimary>
 
             {isSuperFarm && stakingInfo?.earnedAmount?.greaterThan(BIG_INT_ZERO) && (
@@ -362,7 +362,7 @@ const Manage: React.FC<ManageProps> = ({ version, stakingInfo, currencyA, curren
         )}
         {!userLiquidityUnstaked ? null : userLiquidityUnstaked.equalTo('0') ? null : (
           <TYPE.main>
-            {userLiquidityUnstaked.toSignificant(6)} {t('earnPage.stakingTokensAvailable', { symbol: 'PGL' })}
+            {userLiquidityUnstaked.toSignificant(6)} {t('earnPage.stakingTokensAvailable', { symbol: 'SGL' })}
           </TYPE.main>
         )}
       </PositionInfo>

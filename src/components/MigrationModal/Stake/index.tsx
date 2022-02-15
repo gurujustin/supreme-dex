@@ -179,7 +179,7 @@ const Stake = ({
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Pangolin Liquidity',
+      name: 'Supreme Liquidity',
       version: '1',
       chainId: chainId,
       verifyingContract: pairContract.address
