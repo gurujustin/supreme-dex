@@ -91,12 +91,14 @@ import {
   NFTD,
   CLY,
   COOK,
-  SKILL
+  SKILL,
+  SUPREME
 } from 'src/constants'
 import { WAVAX } from '@pangolindex/sdk'
 
 export const COIN_LISTS = [
   WAVAX,
+  SUPREME,
   PNG,
   ETH,
   WETHe,

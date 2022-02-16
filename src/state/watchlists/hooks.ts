@@ -3,7 +3,7 @@ import { ChainId, Token } from '@pangolindex/sdk'
 import { AppState } from '../index'
 import { COIN_LISTS } from 'src/constants/coinLists'
 import { useActiveWeb3React } from 'src/hooks'
-import { PNG } from 'src/constants'
+import { PNG, SUPREME } from 'src/constants'
 
 export function useSelectedCurrencyLists(): Token[] | undefined {
   const { chainId = ChainId.AVALANCHE } = useActiveWeb3React()
@@ -13,7 +13,7 @@ export function useSelectedCurrencyLists(): Token[] | undefined {
     ([] as string[]).concat(state?.watchlists?.currencies || [])
   )
 
-  addresses = [PNG[chainId]?.address, ...addresses]
+  addresses = [SUPREME[chainId]?.address, PNG[chainId]?.address, ...addresses]
 
   let allSelectedToken = [] as Token[]
 
@@ -33,7 +33,7 @@ export function useIsSelectedCurrency(address: string): Boolean {
     ([] as string[]).concat(state?.watchlists?.currencies || [])
   )
 
-  addresses = [PNG[chainId]?.address, ...addresses]
+  addresses = [SUPREME[chainId]?.address, PNG[chainId]?.address, ...addresses]
 
   const isSelected = (addresses || []).includes(address)
   return isSelected
