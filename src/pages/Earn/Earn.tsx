@@ -27,11 +27,11 @@ const TopSection = styled(AutoColumn)`
   width: 100%;
 `
 
-const FlexDiv = styled.div`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-`
+// const FlexDiv = styled.div`
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+// `
 
 const PoolSection = styled.div`
   display: grid;
@@ -290,7 +290,7 @@ const Earn: React.FC<EarnProps> = ({ version, stakingInfos, poolMap }) => {
                 >
                   <TYPE.white fontSize={14}>{t('earnPage.readMoreAboutPng')}</TYPE.white>
                 </ExternalLink>
-                <FlexDiv>
+                {/* <FlexDiv>
                   <ExternalLink
                     style={{ color: 'white', textDecoration: 'underline', marginRight: 10 }}
                     href="https://app.nexusmutual.io/cover/buy/get-quote?address=0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
@@ -305,7 +305,7 @@ const Earn: React.FC<EarnProps> = ({ version, stakingInfos, poolMap }) => {
                   >
                     <TYPE.white fontSize={14}>{t('earnPage.getInsuranceCoverage')}</TYPE.white>
                   </ExternalLink>
-                </FlexDiv>
+                </FlexDiv> */}
               </AutoRow>
             </AutoColumn>
           </CardSection>
