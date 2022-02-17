@@ -85,14 +85,16 @@ export function useTokenList(urls: string[] | undefined): TokenAddressMap {
             tokenList[chainId] = tokenList[chainId] || {}
             tokenList[chainId] = {
               ...tokenList[chainId],
-              ...tokens
+              ...tokens,
             }
           }
+
         } catch (error) {
           console.error('Could not show token list due to error', error)
         }
       }
     })
+    // console.log("list", tokenList);
     return tokenList as TokenAddressMap
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lists, urls])

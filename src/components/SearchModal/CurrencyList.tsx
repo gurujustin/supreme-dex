@@ -17,6 +17,7 @@ import { FadedSpan, MenuItem } from './styleds'
 import Loader from '../Loader'
 import { isTokenOnList } from '../../utils'
 import { useTranslation } from 'react-i18next'
+import { SUPREME } from 'src/constants'
 
 function currencyKey(currency: Currency): string {
   return currency instanceof Token ? currency.address : currency === CAVAX ? 'AVAX' : ''
@@ -133,7 +134,7 @@ function CurrencyRow({
               </LinkStyledButton>
             </TYPE.main>
           ) : null}
-          {!isOnSelectedList && !customAdded ? (
+          {!isOnSelectedList && !customAdded && currency != SUPREME[43114]? (
             <TYPE.main fontWeight={500}>
               {t('searchModal.foundByAddress')}
               <LinkStyledButton
@@ -173,7 +174,7 @@ export default function CurrencyList({
   fixedListRef?: MutableRefObject<FixedSizeList | undefined>
   showETH: boolean
 }) {
-  const itemData = useMemo(() => (showETH ? [Currency.CAVAX, ...currencies] : currencies), [currencies, showETH])
+  const itemData = useMemo(() => (showETH ? [Currency.CAVAX, SUPREME[43114], ...currencies] : [SUPREME[43114], ...currencies]), [currencies, showETH])
 
   const Row = useCallback(
     ({ data, index, style }) => {

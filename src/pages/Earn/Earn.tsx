@@ -285,7 +285,7 @@ const Earn: React.FC<EarnProps> = ({ version, stakingInfos, poolMap }) => {
               <AutoRow justify="space-between">
                 <ExternalLink
                   style={{ color: 'white', textDecoration: 'underline' }}
-                  href="https://pangolin.exchange/litepaper"
+                  href="https://supremacy.gitbook.io/"
                   target="_blank"
                 >
                   <TYPE.white fontSize={14}>{t('earnPage.readMoreAboutPng')}</TYPE.white>
